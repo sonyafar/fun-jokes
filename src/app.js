@@ -152,7 +152,7 @@ async function getJokeByCategory(category) {
 async function share() {
 
     const url = encodeURI(window.location.href);
-    let text = encodeURIComponent('Best joke of the day! Just listen: ');
+    let text = encodeURIComponent('Best joke of the day! Just listen to this: ');
 
     window.open(
         `https://t.me/share/url?url=${url}&text=${text + '\n' + ' "' + document.querySelector('.joke-text').textContent + '"' }`, 

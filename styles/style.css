@@ -29,8 +29,9 @@ body {
     flex-direction: column;
     
     width: 650px;
+    height: 490px;
     min-width: 400px;
-    min-height: 490px;
+    margin-top: 80px;
     padding: 40px;
     padding-bottom: 20px;
 
@@ -43,6 +44,7 @@ body {
 @media (max-width: 576px) {
     .content-wrapper {
         width: 400px;
+        height: max-content;
     }
 }
 
@@ -104,13 +106,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 240px;
-    padding: 20px 60px;
+    min-height: 180px;
+    height: max-content;
+    margin: 0px 20px;
+    margin-top: 10px;
 }
 
 @media (max-width: 576px) {
     .joke {
-        min-height: 200px;
+        min-height: 150px;
+        height: max-content;
     }
 }
 
@@ -120,12 +125,15 @@ body {
     color: #424242;
     text-align: center;
     line-height: 1.5rem;
+
+    width: fit-content;
 }
 
 
 .actions {
     display: flex;
-    margin: 0 auto;
+    margin: 20px auto;
+    margin-bottom: 30px;
 }
 
 .actions button {
@@ -136,7 +144,6 @@ body {
     font-size: 18px;
 
     padding: 10px 30px;
-    margin: 0px 10px;
     border-radius: 8px;
     background-color: transparent;
     border: none;
@@ -182,9 +189,9 @@ body {
 
 
 .footer {
-    position: absolute;
-    bottom: 30px;
-    /* margin-top: auto; */
+    padding-top: 40px;
+    border-bottom: 30px;
+    margin-top: auto;
 }
 
 .footer a {
@@ -276,6 +283,12 @@ body {
     border-radius: 0.5em;
     cursor: pointer;
     text-align: right;
+}
+
+@media (max-width: 576px) {
+    .menu li {
+        text-align: center;
+    }
 }
 
 .menu li:hover {
